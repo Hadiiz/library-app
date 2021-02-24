@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab&family=Open+Sans&family=Quicksand&family=UnifrakturMaguntia&display=swap");
+body,
+html {
+  padding: 044;
+  margin: 0;
+  height: 100%;
+}
+body {
+  background-color: #ffe1a8;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#main {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  overflow: auto;
+}
+
+#main-txt {
+  font-family: "UnifrakturMaguntia", cursive;
+  margin-top: 3rem;
+  display: block;
+  font-size: 6rem;
+  color: #472d30;
+}
+#add-button {
+  border: none;
+  background-color: #e26d5c;
+  color: #472d30;
+  border-radius: 8px;
+  margin-top: 2rem;
+  height: 2.4rem;
+  width: 6rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+#books {
+  /* border: 1px solid blue; */
+  display: grid;
+  width: 100%;
+}
+/* ------------------------------------------------BOOKS------------------------------------------------ */
+.book {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  width: 17rem;
+  align-items: center;
+  background-color: #1b9aaa;
+  border-radius: 10px;
+}
+#title {
+  margin-top: 2rem;
+  font-family: "Amatic SC", cursive;
+  font-size: 4rem;
+  color: #ffff82;
+}
+#author {
+  margin-top: 1rem;
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #e6e65a;
+}
+#pages {
+  margin-top: 1rem;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.7rem;
+  font-weight: lighter;
+  color: #e6e65a;
+}
+.book-btn {
+  border-radius: 4px;
+  border: 1px solid #1b9aaa;
+  width: 10rem;
+  height: 2rem;
+  font-family: "Josefin Slab", serif;
+  letter-spacing: 0.2em;
+  padding-top: 0.4em;
+  color: black;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+#read-btn {
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
+  background-color: #dddf00;
+}
+#delete-btn {
+  background-color: #e71d36;
+}
