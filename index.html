@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form-style.css" />
     <title>Library App</title>
   </head>
   <body>
@@ -18,6 +19,26 @@
           <button class="book-btn" id="delete-btn">Delete</button>
         </div>
       </section>
+    </container>
+    <container id="form-section">
+      <form id="new-book">
+        <input
+          class="new-book-input"
+          type="text"
+          placeholder="Title"
+          required
+        /><br />
+        <input
+          class="new-book-input"
+          type="text"
+          placeholder="Author"
+          required
+        /><br />
+        <input class="new-book-input" type="number" placeholder="Pages" /><br />
+        <label>Read?</label>
+        <input id="checkbox" type="checkbox" /><br />
+        <button id="submit-btn" type="submit">Add</button>
+      </form>
     </container>
   </body>
 </html>
