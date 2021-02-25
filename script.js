@@ -40,15 +40,37 @@ function refresh(){
     books_section.innerHTML = '';
     book_arr.forEach(element => {
         books_section.innerHTML += `<div class="book">
-        <h2 id="title">${element.title}</h2>
-        <h2 id="author">${element.author}</h2>
-        <h2 id="pages">${element.pages} Pages</h2>
-        <button class="book-btn" id=${element.read == true? "read-btn":"not-read-btn"}>${element.read == true? "Read":"Not Read"}</button>
-        <button class="book-btn" id="delete-btn">Delete</button>
+        <h2 class="title">${element.title}</h2>
+        <h2 class="author">${element.author}</h2>
+        <h2 class="pages">${element.pages} Pages</h2>
+        <button class="${"book-btn".concat(element.read == true? " read-btn":" not-read-btn")}">${element.read == true? "Read":"Not Read"}</button>
+        <button class="book-btn delete-btn">Delete</button>
       </div>`;
     });
+
+    let delete_btn = document.querySelectorAll('.delete-btn');
+
+    delete_btn.forEach(element =>{
+        element.addEventListener('click', e =>{
+            let counter = 0;
+            book_arr.forEach(item =>{
+            
+                console.log(item);
+                if(item.title === element.parentElement.children[0].innerHTML &&
+                    item.author === element.parentElement.children[1].innerHTML){
+                    book_arr.splice(counter, 1);
+                    // counter --;
+                    }
+                counter ++;
+        
+            })
+            refresh();
+        });
+
+})
 }
 
 
 
 refresh();
+

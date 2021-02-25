@@ -55,20 +55,20 @@ body {
   background-color: #1b9aaa;
   border-radius: 10px;
 }
-#title {
+.title {
   margin-top: 2rem;
   font-family: "Amatic SC", cursive;
   font-size: 4rem;
   color: #ffff82;
 }
-#author {
+.author {
   margin-top: 1rem;
   font-family: "Amatic SC", cursive;
   font-size: 2rem;
   font-weight: lighter;
   color: #e6e65a;
 }
-#pages {
+.pages {
   margin-top: 1rem;
   font-family: "Amatic SC", cursive;
   font-size: 1.7rem;
@@ -88,16 +88,16 @@ body {
   font-size: 1em;
 }
 
-#read-btn {
+.read-btn {
   margin-top: 1.4rem;
   margin-bottom: 1rem;
   background-color: #dddf00;
 }
-#not-read-btn {
+.not-read-btn {
   margin-top: 1.4rem;
   margin-bottom: 1rem;
   background-color: #de6b48;
 }
-#delete-btn {
+.delete-btn {
   background-color: #e71d36;
 }
