@@ -31,7 +31,7 @@ const checkbox = document.getElementById("checkbox");
 submit.addEventListener('click', e=>{
     e.preventDefault();
     if(text.value !='' && author.value!='' && pages.value!= ''){
-        book_arr.push(new Book(text.value, author.value, pages.value, checkbox.value == "on"? true : false));
+        book_arr.push(new Book(text.value, author.value, pages.value, checkbox.checked));
         refresh();
     }
 })
@@ -43,7 +43,7 @@ function refresh(){
         <h2 id="title">${element.title}</h2>
         <h2 id="author">${element.author}</h2>
         <h2 id="pages">${element.pages} Pages</h2>
-        <button class="book-btn" id="read-btn">${element.read == true? "Read":"Not Read"}</button>
+        <button class="book-btn" id=${element.read == true? "read-btn":"not-read-btn"}>${element.read == true? "Read":"Not Read"}</button>
         <button class="book-btn" id="delete-btn">Delete</button>
       </div>`;
     });

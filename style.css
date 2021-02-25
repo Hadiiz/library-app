@@ -42,7 +42,7 @@ body {
   margin-top: 2rem;
   /* border: 1px solid blue; */
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   width: 100%;
 }
 /* ------------------------------------------------BOOKS------------------------------------------------ */
@@ -92,6 +92,11 @@ body {
   margin-top: 1.4rem;
   margin-bottom: 1rem;
   background-color: #dddf00;
+}
+#not-read-btn {
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
+  background-color: #de6b48;
 }
 #delete-btn {
   background-color: #e71d36;
