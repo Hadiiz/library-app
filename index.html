@@ -10,31 +10,30 @@
     <container id="main">
       <h1 id="main-txt">Library</h1>
       <button id="add-button">Add Book</button>
-      <section id="books">
-        <div class="book">
-          <h2 id="title">Moby Dick</h2>
-          <h2 id="author">Herman Melville</h2>
-          <h2 id="pages">378 Pages</h2>
-          <button class="book-btn" id="read-btn">Read</button>
-          <button class="book-btn" id="delete-btn">Delete</button>
-        </div>
-      </section>
+      <section id="books"></section>
     </container>
     <container id="form-section">
       <form id="new-book">
         <input
           class="new-book-input"
+          id="title-form"
           type="text"
           placeholder="Title"
           required
         /><br />
         <input
           class="new-book-input"
+          id="author-form"
           type="text"
           placeholder="Author"
           required
         /><br />
-        <input class="new-book-input" type="number" placeholder="Pages" /><br />
+        <input
+          class="new-book-input"
+          type="number"
+          id="pages-form"
+          placeholder="Pages"
+        /><br />
         <label>Read?</label>
         <input id="checkbox" type="checkbox" /><br />
         <button id="submit-btn" type="submit">Add</button>
