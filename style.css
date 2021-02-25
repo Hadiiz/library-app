@@ -39,6 +39,7 @@ body {
 }
 
 #books {
+  margin-top: 2rem;
   /* border: 1px solid blue; */
   display: grid;
   grid-template-columns: repeat(7, 1fr);
